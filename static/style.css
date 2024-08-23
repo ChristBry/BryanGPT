@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+}
+
+h2 {
+    font-family: 'Noto Sans', 'Arial';
+    font-size: 30px;
+    color: white;
+    margin: 20px;
+}
+
+h4 {
+    color: white;
+    font-family: 'Noto Sans', 'Arial';
+    font-weight: 400;
+}
+
+p {
+    color: white;
+}
+
+small {
+    color: gray;
+}
+
+textarea {
+    padding: 12px 30px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-family: 'Open Sans', 'Arial';
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 15px;
+    font-family: 'Noto Sans', 'Arial';
+}
+
+i {
+    color: gray;
+    font-size: 20px;
+}
+
+img {
+    width: 10%;
+}
+
+.aside {
+    background-color: black;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 30px;
+}
+
+.new-discussion .new {
+    float: right;
+}
+
+.gpt {
+    margin: 30px auto;
+}
+
+.gpt h4 {
+    margin: 15px auto;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.gpt h4 a {
+    text-decoration: none;
+    color: white;
+}
+
+.gpt h4 img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.gpt h4 i {
+    font-size: 25px;
+    margin-right: 2%;
+    margin-left: 1%;
+    vertical-align: middle;
+}
+
+.upgrade {
+    position: relative;
+    top: 60%;
+    width: 100%;
+}
+
+.upgrade p {
+    font-family: 'Open Sans', 'Arial';
+    font-size: 12px;
+}
+
+.upgrade small {
+    font-family: 'Roboto', 'Arial';
+    font-size: 10px;
+}
+
+.main-content {
+    margin-left: 25%;
+}
+
+.main-content small {
+    margin-left: 210px;
+    color: gray;
+}
+
+.header i {
+    float: right;
+    color: white;
+    font-size: 25px;
+    margin-right: 30px;
+    padding-top: 10px;
+}
+
+.chatbox {
+    display: block;
+    height: 500px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.user-message {
+    display: block;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    margin-right: 5%;
+    margin-left: 75%;
+    max-width: 50%;
+    margin-top: 4%;
+}
+
+.bot-message {
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    max-width: 50%;
+    margin-left: 3%;
+    margin-top: 4%
+}
+
+.message {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.message p {
+    padding: 5px;
+    font-family: 'Noto Sans', 'Arial';
+    font-size: 15px;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 89%;
+    left: 30%;
+    width: 70%;
+}
+
+.question textarea {
+    width: 50%;
+    padding: 1%;
+}
+
+.question button {
+    border-radius: 50%;
+    width: 4%;
+    padding: 1%;
+    margin-left: 1%;
+    background-color: rgb(41, 41, 41);
+    border: none;
+}
+
+.question button i {
+    color: #A9A9A9;
+    font-size: 20px;
+}
+
+.pop-upBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.pop-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: rgb(41, 41, 41);
+    border-radius: 20%;
+    z-index: 1;
+}

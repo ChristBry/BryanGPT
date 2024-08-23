@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/db9fbafb03.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <div class="aside">
+            <div class="new-discussion">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-pen-to-square new"></i>
+            </div>
+            <div class="gpt">
+                <h4>
+                    <img src="{{ url_for('static', filename='images/chatGPT.png') }}" alt="Logo chatGPT">
+                    BryanGPT
+                </h4>
+                <h4>
+                    <img src="{{ url_for('static', filename='images/hugging.png') }}" alt="logo hugging Face">
+                    <a href="https://huggingface.co/">Hugging Face</a>
+                </h4>
+                <h4>
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <a href="https://huggingface.co/models">Explorer les autres modèles</a>
+                </h4>
+            </div>
+            <div class="discussion">
+                <!--Nouvelle discussion-->
+            </div>
+            <div class="upgrade">
+                <p>Passez au plan supérieur</p>
+                <small>Profitez d'autres modèles d'IA avec Hugging Face</small>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h2>BryanGPT
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </h2>
+            </div>
+            <div class="chatbox">
+                <!--Chat Box-->
+            </div>
+            <div class="question">
+                <textarea rows="1" name="user_input" placeholder="Message BryanGPT" id="message-input"></textarea>
+                <button class="btn" id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!---PopUP de connexion --->
+    <div class="pop-upBackground">
+        <div class="pop-up">
+            <h5>Bienvenue dans BryanGPT</h5>
+            <p>Connectez-vous ou inscrivez-vous pour bénéficier de réponses plus intelligentes, <br>
+                télécharger des fichiers et des images, et bien plus encore.
+            </p>
+        </div>
+        <div>
+            <button class="btn-login" id="login-btn">Se connecter</button>
+            <button class="btn-signup" id="signup-btn">S'inscrire</button>
+        </div>
+        <a href="#">Rester deconnecté</a>
+    </div>
+
+    <!-- Connexion avec le fichier JavaScript --->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
