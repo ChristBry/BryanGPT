@@ -26,9 +26,11 @@ function sendMessage() {
         fetch("/api", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/x-www-form-urlencoded"
             },
-            body: JSON.stringify({ message })
+            body: new URLSearchParams({
+                "user_input": message
+            })
         })
             .then(response => response.json())
             .then(data => {
