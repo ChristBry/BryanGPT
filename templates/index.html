@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bryan Chat</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/db9fbafb03.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
 </head>
 
 <body>
     <div>
         <div class="aside">
             <div class="new-discussion">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars bar-nav"></i>
                 <i class="fa-solid fa-pen-to-square new"></i>
             </div>
             <div class="gpt">
@@ -41,8 +43,8 @@
         <div class="main-content">
             <div class="header">
                 <h2>BryanGPT
-                    <i class="fa-solid fa-user"></i>
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    <i class="fa-solid fa-user profil"></i>
+                    <i class="fa-solid fa-arrow-up-from-bracket share"></i>
                 </h2>
             </div>
             <div class="chatbox">

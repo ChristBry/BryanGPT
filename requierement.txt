@@ -1,3 +1,0 @@
-flask
-requests
-API_TOKEN = "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"
