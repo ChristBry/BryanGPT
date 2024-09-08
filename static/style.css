@@ -270,7 +270,7 @@ img {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .aside {
         display: none;
     }
@@ -285,16 +285,20 @@ img {
         margin-left: 0px;
     }
 
+    .header h2 i {
+        float: right;
+    }
+
     .header .share {
         margin-right: 20px;
     }
     .chatbox {
-        width: 380px;
+        width: 350px;
     }
 
     .user-message {
         margin-right: 5%;
-        margin-left: 0px;
+        margin-left: 50px;
         margin-top: 5px;
     }
 
